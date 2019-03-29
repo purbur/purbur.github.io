@@ -61,10 +61,11 @@ function trackScroll() {
 		goTopBtn.classList.remove('back_to_top-show');
 	}
 }
+var minHeight = coords * (-1);
 
 function backToTop() {
 	if (window.pageYOffset > 0) {
-		window.scrollBy(0, -280);
+		window.scrollBy(0, minHeight);
 		setTimeout(backToTop, 0);
 	}
 }
