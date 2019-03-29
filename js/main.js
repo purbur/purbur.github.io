@@ -61,7 +61,7 @@ function trackScroll() {
 		goTopBtn.classList.remove('back_to_top-show');
 	}
 }
-var minHeight = coords * (-1);
+var minHeight = document.documentElement.clientHeight * (-1);
 
 function backToTop() {
 	if (window.pageYOffset > 0) {
